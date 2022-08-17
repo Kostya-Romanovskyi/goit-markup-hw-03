@@ -1,17 +1,22 @@
 :root {
+  /* text colors */
   --main-color: #212121;
   --secondary-color: #757575;
   --active-color: #2196f3;
   --white-color: #ffffff;
   --link-color-rgba: rgba(255, 255, 255, 0.6);
+  /* background color */
   --bg-dark: #2f303a;
   --bg-light: #f5f4fa;
   --border-color: #eeeeee;
   --header-line: #ececec;
+  /* fonts */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
 }
 body {
   color: var(--main-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--main-font);
 }
 h1,
 h2,
@@ -74,12 +79,13 @@ img {
 .blue {
   color: var(--active-color);
 }
+.list {
+  list-style: none;
+}
 .nav-list {
   display: flex;
 
   margin-left: 93px;
-
-  list-style: none;
 }
 .nav-item {
   margin-left: 50px;
@@ -107,8 +113,6 @@ img {
 .auth-list {
   display: flex;
   align-items: center;
-
-  list-style: none;
 }
 .auth-item {
 }
@@ -182,7 +186,6 @@ img {
 /* ////яке повторюється */
 
 .pros-list {
-  list-style: none;
 }
 .pros-item {
 }
@@ -204,7 +207,6 @@ img {
 
 /* ЧИМ ЗАЙМАЄМОСЬ */
 .work-list {
-  list-style: none;
 }
 .work-item {
 }
@@ -216,7 +218,6 @@ img {
   background-color: var(--bg-light);
 }
 .team-list {
-  list-style: none;
 }
 .team-item {
 }
@@ -276,8 +277,6 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-
-  list-style: none;
 }
 .filter-item {
   display: inline-block;
@@ -314,8 +313,6 @@ img {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-
-  list-style: none;
 }
 .projects-item {
   width: calc((100% - 60px) / 3);
