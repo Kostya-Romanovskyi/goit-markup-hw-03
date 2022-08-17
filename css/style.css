@@ -247,7 +247,7 @@ img {
   color: var(--white-color);
 }
 .color-rgba {
-  color: var(--link-color-rgba);
+  color: var(--link-color-rgba-60);
 }
 .footer-address {
   font-style: normal;
