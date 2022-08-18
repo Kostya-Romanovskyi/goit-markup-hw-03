@@ -59,8 +59,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 .header-nav {
   display: flex;
@@ -94,6 +92,8 @@ img {
   margin-left: 0;
 }
 .nav-link {
+  display: block;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.15;
@@ -102,6 +102,9 @@ img {
   color: var(--main-color);
 
   text-decoration: none;
+}
+.link-padding {
+  padding: 32px 0;
 }
 .nav-list .nav-link.current {
   color: var(--active-color);
@@ -140,7 +143,10 @@ img {
 /* ГЕРОЙ */
 .hero {
   background-color: var(--bg-dark);
+
   text-align: center;
+
+  padding: 200px 0;
 }
 .hero-title {
   font-weight: 900;
@@ -151,6 +157,8 @@ img {
   text-transform: uppercase;
 
   color: var(--white-color);
+
+  margin-bottom: 30px;
 }
 .hero-button {
   font-family: inherit;
@@ -182,10 +190,14 @@ img {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
 }
 /* ////яке повторюється */
 
 .pros-list {
+  display: flex;
+  justify-content: space-between;
 }
 .pros-item {
 }
@@ -195,6 +207,8 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 .pros-text {
   font-size: 14px;
@@ -207,6 +221,8 @@ img {
 
 /* ЧИМ ЗАЙМАЄМОСЬ */
 .work-list {
+  display: flex;
+  justify-content: space-between;
 }
 .work-item {
 }
@@ -218,23 +234,39 @@ img {
   background-color: var(--bg-light);
 }
 .team-list {
+  display: flex;
+  justify-content: space-between;
 }
 .team-item {
+  background-color: var(--white-color);
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-img {
+  margin-bottom: 30px;
 }
 .team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
+
+  text-align: center;
+
+  margin-bottom: 10px;
 }
 .team-text {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
 
+  text-align: center;
+
   color: var(--secondary-color);
+
+  margin-bottom: 30px;
 }
 
 /* FOOTER */
